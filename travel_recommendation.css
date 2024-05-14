@@ -1,0 +1,66 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('travel.jpg');
+    background-size: 100%;
+
+}
+.navigation_bar{
+display:flex;
+background-color: rgba(64, 65, 66, 0.8);
+
+}
+
+.nav_bar_item{
+    flex:1;
+
+}
+
+.nav_bar_item .navigation ul{
+list-style:none;
+padding-left: 5%;
+}
+.nav_bar_item .navigation ul li{
+   display: inline-flex;
+   margin-left: 14%;
+   
+    }
+.nav_bar_item .navigation ul li a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: large;
+        font-weight: bold;
+        
+       
+        }
+
+.nav_bar_item .search_bar{
+   margin-top:2% ;
+   background-color: rgba(255, 255, 255,.5);
+   display:flex;
+
+}
+.nav_bar_item .search_bar .search_input {
+flex-basis: 60%;
+margin-left: 5%;
+margin-right: 5%;
+}
+.nav_bar_item .search_bar .search_button {
+    flex-basis: 11%;
+    margin-left: 2%;
+margin-right: 2%;
+border-radius: 2%;
+background-color: rgba(96, 119, 235, 0.8);
+}
+
+.nav_bar_item .search_bar .clear_button {
+    flex-basis: 11%;
+    margin-left: 2%;
+margin-right: 2%;
+border-radius: 2%;
+}
