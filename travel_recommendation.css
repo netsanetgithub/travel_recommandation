@@ -41,26 +41,64 @@ padding-left: 5%;
 
 .nav_bar_item .search_bar{
    margin-top:2% ;
-   background-color: rgba(255, 255, 255,.5);
+   background-color: rgba(255, 255, 255,.8);
    display:flex;
+   
+   padding-bottom: 1%;
+   margin-bottom: 1%;
+ 
 
 }
 .nav_bar_item .search_bar .search_input {
 flex-basis: 60%;
 margin-left: 5%;
 margin-right: 5%;
+outline: none;
+background: none;
+border: 0px solid rgba(77, 105, 243, 0.8);
+border-bottom: 1px solid rgba(77, 105, 243, 0.8);
+border-image-width: 0%;
 }
 .nav_bar_item .search_bar .search_button {
     flex-basis: 11%;
     margin-left: 2%;
 margin-right: 2%;
+margin-top: 1%;
 border-radius: 2%;
-background-color: rgba(96, 119, 235, 0.8);
+border: 0px solid red;
+background-color: rgba(77, 105, 243, 0.8);
+border-radius: 15%;
+padding: 1%;
+
 }
 
 .nav_bar_item .search_bar .clear_button {
     flex-basis: 11%;
     margin-left: 2%;
 margin-right: 2%;
+margin-top: 1%;
 border-radius: 2%;
+border: 0px solid red;
+background-color: rgba(77, 105, 243, 0.8);
+border-radius: 15%;
+padding: 1%;
 }
+
+.home {
+    display:flex;
+   
+}
+.home .home_website_detail{
+flex-basis:5% ;
+
+}
+
+.home .home_website_detail{
+    flex-basis:5% ;
+    
+    }
+
+.home .home_website_detail{
+        flex-basis:5% ;
+        
+        }  
