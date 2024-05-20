@@ -8,11 +8,20 @@ body{
     padding: 0;
     background-image: url('travel.jpg');
     background-size: 100%;
+    
+    
 
 }
+
+
+
+
+
+
+
 .navigation_bar{
 display:flex;
-background-color: rgba(64, 65, 66, 0.8);
+background-color: rgba(64, 65, 66, 0.9);
 
 }
 
@@ -38,14 +47,22 @@ padding-left: 5%;
         
        
         }
+        .nav_bar_item .navigation ul li a:hover{
+           color:rgba(0, 194, 243,1) ;
+           font-size: larger;
+            
+           
+            }       
 
 .nav_bar_item .search_bar{
    margin-top:2% ;
-   background-color: rgba(255, 255, 255,.8);
+   background-color: rgba(248, 245, 245, 0.8);
    display:flex;
    
    padding-bottom: 1%;
    margin-bottom: 1%;
+   border-radius: 11px;
+   
  
 
 }
@@ -54,51 +71,110 @@ flex-basis: 60%;
 margin-left: 5%;
 margin-right: 5%;
 outline: none;
+color: rgb(0, 0, 0);
 background: none;
 border: 0px solid rgba(77, 105, 243, 0.8);
-border-bottom: 1px solid rgba(77, 105, 243, 0.8);
+border-bottom: 1px solid rgba(94, 201, 228, 0.8);
 border-image-width: 0%;
 }
+
+.nav_bar_item .search_bar .search_input::placeholder{
+    color: rgb(0, 0, 0);
+}
+
 .nav_bar_item .search_bar .search_button {
     flex-basis: 11%;
     margin-left: 2%;
 margin-right: 2%;
 margin-top: 1%;
-border-radius: 2%;
+border-radius: 5px;
 border: 0px solid red;
-background-color: rgba(77, 105, 243, 0.8);
-border-radius: 15%;
+background-color: rgba(94, 201, 228, 0.8);
+color:white;
 padding: 1%;
 
 }
+.nav_bar_item .search_bar .search_button:hover {
+background-color: rgb(7, 110, 136);
+}
+
 
 .nav_bar_item .search_bar .clear_button {
     flex-basis: 11%;
     margin-left: 2%;
 margin-right: 2%;
 margin-top: 1%;
-border-radius: 2%;
+border-radius: 5px;
 border: 0px solid red;
-background-color: rgba(77, 105, 243, 0.8);
-border-radius: 15%;
+background-color: rgba(94, 201, 228, 0.8);
+color:white;
+
 padding: 1%;
 }
 
+.nav_bar_item .search_bar .clear_button:hover {
+    background-color: rgb(7, 110, 136);;
+    }
+
 .home {
     display:flex;
+    background-color: rgb(99, 96, 96,.6);
    
 }
-.home .home_website_detail{
-flex-basis:5% ;
+.home .row1{
+flex-basis:8% ;
+padding-top: 3%;
 
 }
-
-.home .home_website_detail{
-    flex-basis:5% ;
+.home .row1 div{
+    margin-top: 5%;
+    
     
     }
 
-.home .home_website_detail{
-        flex-basis:5% ;
+
+.home .row2{
+    flex-basis:62% ;
+   
+    
+    }
+
+    .home .row2 .home_website_header{
+        color:white;
+        margin-top: 18%;
+        font-size: larger;
+
+    }
+    .home .row2 .home_website_detail{
+        color:white;
+        margin-top: 5%;;
+        margin-left: 1%;
+        font-size:large;
+
+    }
+    .home .row2 .home_website_bookmow_button input{
+ background-color: rgb(0, 194, 243);
+ margin-right: 2%;
+ margin-top: 1%;
+ border-radius: 2%;
+ border: 0px solid red;
+ background-color: rgba(94, 201, 228, 0.8);
+ color:white;
+ width: 15%;
+ 
+ padding: 1%;
+ margin-bottom: 40%;
+ border-radius: 7px;
+    }
+
+    .home .row2 .home_website_bookmow_button input:hover{
+        background-color: rgb(7, 110, 136);
+        outline: auto;
+        
+           }
+
+
+.home .row3{
+        flex-basis:30% ;
         
         }  
