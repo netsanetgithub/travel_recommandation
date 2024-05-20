@@ -1,3 +1,5 @@
+/* This is a CSS style for homepage */
+
 html,body{
     height: 100%;
     margin: 0;
@@ -178,3 +180,66 @@ padding-top: 3%;
         flex-basis:30% ;
         
         }  
+
+
+
+/* This is a CSS style for about us */
+.aboutus {
+    display:flex;
+    background-color: rgb(99, 96, 96,.6);
+   
+}
+.aboutus .row1{
+flex-basis:8% ;
+padding-top: 3%;
+
+}
+.aboutus .row1 div{
+    margin-top: 5%;
+    
+    
+    }
+
+
+.aboutus .row2{
+    flex-basis:80% ;
+   
+    
+    }
+
+    .aboutus .row2 .about_us_header{
+        color:white;
+        
+        font-size: larger;
+
+    }
+    .aboutus .row2 .about_us_detail{
+        color:white;
+        margin-top: 5%;;
+        margin-left: 1%;
+        font-size:large;
+
+    }
+    .aboutus .row2 .home_website_bookmow_button input{
+ background-color: rgb(0, 194, 243);
+ margin-right: 2%;
+ margin-top: 1%;
+ border-radius: 2%;
+ border: 0px solid red;
+ background-color: rgba(94, 201, 228, 0.8);
+ color:white;
+ width: 15%;
+ 
+ padding: 1%;
+ margin-bottom: 40%;
+ border-radius: 7px;
+    }
+
+    .home .aboutus .home_website_bookmow_button input:hover{
+        background-color: rgb(7, 110, 136);
+        outline: auto;
+        
+           }
+
+
+ 
