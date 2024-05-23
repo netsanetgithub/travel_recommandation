@@ -220,26 +220,33 @@ padding-top: 3%;
         font-size:large;
 
     }
-    .aboutus .row2 .home_website_bookmow_button input{
- background-color: rgb(0, 194, 243);
- margin-right: 2%;
- margin-top: 1%;
- border-radius: 2%;
- border: 0px solid red;
- background-color: rgba(94, 201, 228, 0.8);
- color:white;
- width: 15%;
- 
- padding: 1%;
- margin-bottom: 40%;
- border-radius: 7px;
+
+    .aboutus .home_website_team_detail{
+        margin-top: 7%;
+        padding-bottom: 25%;
+        display: flex;
     }
+    .aboutus .home_website_team_detail .our_team {
+        flex-basis: 50%;
+        border: 1px solid red;
+     }
 
-    .home .aboutus .home_website_bookmow_button input:hover{
-        background-color: rgb(7, 110, 136);
-        outline: auto;
-        
-           }
+    .aboutus .home_website_team_detail .team_members {
+        flex-basis: 50%;
 
+    }
+    
+    .aboutus .home_website_team_detail .team_members .person1{
+        flex-basis: 30%;
+
+    }
+    .aboutus .home_website_team_detail .team_members .person2{
+        flex-basis: 30%;
+
+    }
+    .aboutus .home_website_team_detail .team_members .person3{
+        flex-basis: 40%;
+
+    }
 
  
