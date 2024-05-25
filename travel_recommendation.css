@@ -218,8 +218,10 @@ padding-top: 3%;
         margin-top: 5%;;
         margin-left: 1%;
         font-size:large;
+        background-color: rgba(64, 65, 66, 0.8);
 
     }
+    
 
     .aboutus .home_website_team_detail{
         margin-top: 7%;
@@ -230,23 +232,123 @@ padding-top: 3%;
         flex-basis: 50%;
         border: 1px solid red;
      }
+     .aboutus .home_website_team_detail .our_team h1{
+        color: white;
+     }
 
     .aboutus .home_website_team_detail .team_members {
         flex-basis: 50%;
-
+        display: flex;
+        margin-left:6%;
+    }
+    .aboutus .home_website_team_detail .team_members h3,p {
+        color: white;
+    }
+   
+    .aboutus .home_website_team_detail .team_members h2 {
+        color: rgb(3, 21, 70);
     }
     
     .aboutus .home_website_team_detail .team_members .person1{
         flex-basis: 30%;
-
+        border-radius: 5px;
+        margin-left: 5%;
+        background-color: rgba(64, 65, 66, 0.8);
     }
     .aboutus .home_website_team_detail .team_members .person2{
         flex-basis: 30%;
-
+        background-color: rgba(64, 65, 66, 0.8);
+        margin-left: 5%;
+        border-radius: 5px;
     }
     .aboutus .home_website_team_detail .team_members .person3{
         flex-basis: 40%;
-
+        background-color: rgba(64, 65, 66, 0.8);
+        margin-left: 5%;
+        border-radius: 5px;
     }
+    .aboutus .home_website_team_detail .team_members  .role{
+        background-color: rgb(6, 60, 104);
+        border: 10px;
+        
+    }
+
+    .contactus {
+        display:flex;
+        background-color: rgb(99, 96, 96,.6);
+        padding-bottom: 30%;
+    }
+    .contactus .row1{
+    flex-basis:8% ;
+    padding-top: 3%;
+    
+    }
+    .contactus .row1 div{
+        margin-top: 5%;
+        
+        
+        }
+    
+    
+    .contactus .row2{
+        flex-basis:80% ;
+       
+        
+        }
+
+    .contactus .row2 {
+        
+    display: flex;
+    margin-top: 10%;
+    }
+
+    .contactus .row2 .header{
+       flex-basis: 40%;
+       
+        
+     }
+     .contactus .row2 .header h1{
+        margin-left: 51%;
+        color: white;
+         
+      }
+
+      .contactus .row2 .contact_us{
+    flex-basis: 60%;
+    background-color: rgba(64, 65, 66, 0.8);
+    padding-left: 1%;
+    padding-top: 1%;
+            
+        }
+        .contactus .row2 .contact_us label{
+            color: white;
+            
+                 
+                }
+
+    .contactus .row2 .contact_us input{
+        outline: none;
+        border:0px red solid;
+        border-bottom: 1px rgba(0, 194, 243,1) solid;
+        width: 50%;
+        height: 30px;
+        background-color: rgba(0, 194, 243,0);
+                
+            }
+
+            .contactus .row2 .contact_us textarea{
+                width: 50%;
+            }
+            .contactus .row2 .contact_us button{
+                outline: none;
+                border:0px red solid;
+                border-radius: 5px;
+                width: 50%;
+                height: 30px;
+                background-color: rgba(9, 82, 100, 1);
+                margin-top: 2%;
+                 color: white  ;     
+                    }
+
 
  
