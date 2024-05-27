@@ -191,6 +191,12 @@ padding-top: 3%;
     margin-top: 2%;
 
 }
+.home .row3 h3 {
+    color: rgb(254, 254, 255);
+    
+    border: 0px rgb(12, 10, 10) solid;
+
+}
 
 .home .row3 .results {
     background-color: rgba(64, 65, 66, .2);

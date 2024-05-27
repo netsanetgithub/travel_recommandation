@@ -66,7 +66,7 @@ function displayResults(results) {
       if (results.countries && results.countries.length > 0) {
         results.countries.forEach(country => {
           const countryHeading = document.createElement('h3');
-          countryHeading.textContent = `Matching Cities in ${country.name}:`;
+          countryHeading.textContent = `Cities in ${country.name}:`;
           resultsContainer.appendChild(countryHeading);
   
           country.cities.forEach(city => {
@@ -89,7 +89,7 @@ function displayResults(results) {
   
       if (results.temples && results.temples.length > 0) {
         const templesHeading = document.createElement('h3');
-        templesHeading.textContent = 'Matching Temples:';
+        templesHeading.textContent = 'Temples:';
         resultsContainer.appendChild(templesHeading);
   
         results.temples.forEach(temple => {
@@ -114,13 +114,26 @@ function displayResults(results) {
   
       if (results.beaches && results.beaches.length > 0) {
         const beachesHeading = document.createElement('h3');
-        beachesHeading.textContent = 'Matching Beaches:';
+        beachesHeading.textContent = 'Beaches:';
         resultsContainer.appendChild(beachesHeading);
   
         results.beaches.forEach(beach => {
           const beachItem = document.createElement('div');
           beachItem.textContent = beach.name;
           resultsContainer.appendChild(beachItem);
+
+          const breake= document.createElement('br');
+          
+          beachItem.appendChild(breake);
+
+          const beachImg= document.createElement('img');
+          beachImg.src = beach.imageUrl;
+          beachItem.appendChild(beachImg);
+
+          const beachDesc= document.createElement('p');
+          beachDesc.textContent = beach.description;
+          beachItem.appendChild(beachDesc);
+
         });
       }
     } else {
