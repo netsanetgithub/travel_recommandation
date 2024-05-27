@@ -180,7 +180,21 @@ padding-top: 3%;
         flex-basis:30% ;
         
         } 
-.home .row3  
+.home .row3 div {
+    background-color: rgba(64, 65, 66, 1);
+    margin: 1%;
+
+}
+
+.home .row3 img {
+ width: 100%;
+ height: auto;
+}
+
+.home .row3 p {
+ color: rgb(0, 194, 243);
+
+}
 
 
 
