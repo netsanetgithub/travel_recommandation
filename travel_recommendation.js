@@ -18,13 +18,23 @@ function handleSearch(data) {
       let matchingResults = [];
       let matchingTemples = [];
       let matchingBeaches = [];
-  
-      matchingResults = data.countries.filter(country => {
-        return (
-          country.name.toLowerCase().includes(keyword) ||
-          country.cities.some(city => city.name.toLowerCase().includes(keyword))
-        );
+      let matchingcities = [];
+
+     
+    
+
+    matchingResults = data.countries.filter(country => {
+        const matchingCities = country.cities.filter(city => city.name.toLowerCase().includes(keyword));
+        if (matchingCities.length > 0) {
+          country.cities = matchingCities;
+          return true;
+        }
+        return false;
       });
+
+
+
+    
   
       matchingTemples = data.temples.filter(temple => {
         return temple.name.toLowerCase().includes(keyword);
@@ -37,7 +47,8 @@ function handleSearch(data) {
       const searchResults = {
         countries: matchingResults,
         temples: matchingTemples,
-        beaches: matchingBeaches
+        beaches: matchingBeaches,
+        cities:matchingcities
       };
   
       displayResults(searchResults);
@@ -62,9 +73,19 @@ function displayResults(results) {
             const cityItem = document.createElement('div');
             cityItem.textContent = city.name;
             resultsContainer.appendChild(cityItem);
+
+            const cityImg = document.createElement('img');
+            cityImg.src = city.imageUrl;
+            cityItem.appendChild(cityImg);
+
+            const citydescription = document.createElement('p');
+            citydescription.textContent = city.description;
+            cityItem.appendChild(citydescription);
           });
         });
       }
+
+   
   
       if (results.temples && results.temples.length > 0) {
         const templesHeading = document.createElement('h3');
@@ -75,6 +96,19 @@ function displayResults(results) {
           const templeItem = document.createElement('div');
           templeItem.textContent = temple.name;
           resultsContainer.appendChild(templeItem);
+
+          const breake= document.createElement('br');
+          
+          templeItem.appendChild(breake);
+
+          const templeImg= document.createElement('img');
+          templeImg.src = temple.imageUrl;
+          templeItem.appendChild(templeImg);
+
+          const templeDesc= document.createElement('p');
+          templeDesc.textContent = temple.description;
+          templeItem.appendChild(templeDesc);
+          
         });
       }
   

@@ -106,7 +106,7 @@
 
         "id": 1,
 
-        "name": "Angkor Wat, Cambodia",
+        "name": "Angkor Wat Temple , Cambodia",
 
         "imageUrl": "images/Angkor Wat.png",
 
@@ -118,9 +118,9 @@
 
         "id": 2,
 
-        "name": "Taj Mahal, India",
+        "name": "Taj Mahal Temple, India",
 
-        "imageUrl": "images/Taj Mahal.png",
+        "imageUrl": "images/Taj Mahal.jpg",
 
         "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
 
@@ -134,7 +134,7 @@
 
         "id": 1,
 
-        "name": "Bora Bora, French Polynesia",
+        "name": "Bora Bora Beach, French Polynesia",
 
         "imageUrl": "images/Bora Bora.png",
 
