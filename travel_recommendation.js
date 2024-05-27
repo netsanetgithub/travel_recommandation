@@ -71,8 +71,12 @@ function displayResults(results) {
   
           country.cities.forEach(city => {
             const cityItem = document.createElement('div');
-            cityItem.textContent = city.name;
+            
             resultsContainer.appendChild(cityItem);
+
+            const cityname= document.createElement('h2');
+            cityname.textContent = city.name;
+            cityItem.appendChild(cityname);
 
             const cityImg = document.createElement('img');
             cityImg.src = city.imageUrl;
@@ -94,8 +98,11 @@ function displayResults(results) {
   
         results.temples.forEach(temple => {
           const templeItem = document.createElement('div');
-          templeItem.textContent = temple.name;
+          
           resultsContainer.appendChild(templeItem);
+          const templename= document.createElement('h2');
+          templename.textContent = temple.name;
+          templeItem.appendChild(templename);
 
           const breake= document.createElement('br');
           
@@ -119,8 +126,12 @@ function displayResults(results) {
   
         results.beaches.forEach(beach => {
           const beachItem = document.createElement('div');
-          beachItem.textContent = beach.name;
+          
           resultsContainer.appendChild(beachItem);
+
+          const beachname= document.createElement('h2');
+          beachname.textContent = beach.name;
+          beachItem.appendChild(beachname);
 
           const breake= document.createElement('br');
           
