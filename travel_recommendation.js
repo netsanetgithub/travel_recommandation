@@ -9,6 +9,15 @@ fetch('travel_recommendation_api.json')
     console.log('Error:', error);
   });
 
+
+
+const clearSearch=()=>{
+   resultsContainer=document.getElementById('results');
+   resultsContainer.innerHTML="";
+
+
+}
+
 // Function to handle search
 function handleSearch(data) {
     const searchInput = document.getElementById('search_input');
