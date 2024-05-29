@@ -22,43 +22,59 @@ const clearSearch=()=>{
 function handleSearch(data) {
     const searchInput = document.getElementById('search_input');
     const keyword = searchInput.value.trim().toLowerCase();
-  
+    
+    
+
     if (keyword) {
+
+
       let matchingResults = [];
       let matchingTemples = [];
       let matchingBeaches = [];
       let matchingcities = [];
+      
 
-     
+     if(keyword=="country"){
+        console.log("here");
+        matchingResults = data.countries.filter(country => {
+            const matchingCities = country.cities.filter((city => city.name.toLowerCase().includes("tokyo"))&&(city => city.name.toLowerCase().includes("brazil")));
+            if (matchingCities.length > 0) {
+              country.cities = matchingCities;
+              return true;
+            }
+            return false;
+          });   
+    }else{
+        matchingResults = data.countries.filter(country => {
+            const matchingCities = country.cities.filter(city => city.name.toLowerCase().includes(keyword));
+            if (matchingCities.length > 0) {
+              country.cities = matchingCities;
+              return true;
+            }
+            return false;
+          });
     
-
-    matchingResults = data.countries.filter(country => {
-        const matchingCities = country.cities.filter(city => city.name.toLowerCase().includes(keyword));
-        if (matchingCities.length > 0) {
-          country.cities = matchingCities;
-          return true;
-        }
-        return false;
-      });
-
-
-
     
-  
-      matchingTemples = data.temples.filter(temple => {
-        return temple.name.toLowerCase().includes(keyword);
-      });
-  
-      matchingBeaches = data.beaches.filter(beach => {
-        return beach.name.toLowerCase().includes(keyword);
-      });
-  
-      const searchResults = {
+    
+          matchingTemples = data.temples.filter(temple => {
+            return temple.name.toLowerCase().includes(keyword);
+          });
+      
+          matchingBeaches = data.beaches.filter(beach => {
+            return beach.name.toLowerCase().includes(keyword);
+          });
+      
+         
+
+    }
+    
+    const searchResults = {
         countries: matchingResults,
         temples: matchingTemples,
         beaches: matchingBeaches,
         cities:matchingcities
       };
+    console.log(searchResults);
   
       displayResults(searchResults);
     } else {
